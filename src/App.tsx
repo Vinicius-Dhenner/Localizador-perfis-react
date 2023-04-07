@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { CssBaseline } from '@mui/material'
 import './App.css'
+import { BaseLayout } from './BaseLayout'
+import { Main } from './Main/Index'
+
+
 
 function App() {
   return (
     <>
-    <h1>HELLO WORLD!</h1>
+    <CssBaseline/>
+      <BaseLayout title={'LOCALIZADOR DE PERFIS'}/>
+      <Main title={'LOCALIZAR PERFIL'}/>
     </>
   )
 }
