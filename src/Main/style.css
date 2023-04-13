@@ -10,8 +10,15 @@
 
 .main-container-content {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #DCDCDC;
     background-color: #F5F5F5;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    flex-wrap: wrap;
+    border-radius: 5%;
+    justify-content: space-around;
+}
+
+.profile {
+    margin-left: 20px;
 }
