@@ -14,7 +14,6 @@ type ProfileData = {
 
 export function Main(props: MainProps) {
     const [showImage, setShowImage] = useState(false);
-    const [title, setTitle] = useState(false);
     const [profileData, setProfileData] = useState<ProfileData | null>(null);
     const [searchQuery, setSearchQuery] = useState('');
 
@@ -55,14 +54,13 @@ export function Main(props: MainProps) {
                         <br />
                         <Button variant="contained" onClick={handleClick}>BUSCAR</Button>
                     </div>
-                    <div className="column profile">
                     {profileData && (
-                        <>
+                        <div className="column profile">
                             <h2>{profileData.name}</h2>
                             <img className="image" src={profileData.avatar_url} alt={profileData.name} />
-                        </>
+
+                        </div>
                     )}
-                    </div>
                 </div>
             </main>
         </>
