@@ -49,7 +49,7 @@ export function Main(props: MainProps) {
                             label="Digite o perfil que deseja buscar:"
                             variant="outlined"
                             value={searchQuery}
-                            onChange={handleInputChange}
+                            onChange={handleInputChange }
                         />
                         <br />
                         <Button variant="contained" onClick={handleClick}>BUSCAR</Button>
