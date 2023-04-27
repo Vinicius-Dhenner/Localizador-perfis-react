@@ -37,7 +37,7 @@ export function Main(props: MainProps) {
         setSearchQuery(event.target.value);
     };
 
-    return (
+    return ( 
         <>
             <main className="main-container">
                 <div className="main-container-content">
